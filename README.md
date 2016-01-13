@@ -31,6 +31,12 @@ I want to be able to prevent airplanes landing when the weather is stormy
 How to run
 ----------
 
+Clone this repo and run bundle:
+```
+$ git clone https://github.com/Mattia46/airport_challenge
+$ gem install bundle
+$ bundle
+```
 Type `rake` in the application's root folder.
 
 Application Code:
