@@ -1,5 +1,5 @@
 require_relative 'plane'  # => true
-require_relative 'stormy'
+require_relative 'weather'
 class Airport
 
   attr_reader :plane, :planes, :capacity, :stormy  # => nil
