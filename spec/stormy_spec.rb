@@ -1,4 +1,4 @@
-require 'stormy'
+require 'weather'
 
 # class Dummy;  include Stormy; end
 #
