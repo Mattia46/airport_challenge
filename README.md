@@ -1,7 +1,7 @@
 Airport Challenge
 =================
 
-User story
+User stories
 -----
 
 We have a request from a client to write the software to control the flow of
