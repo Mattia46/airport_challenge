@@ -1,14 +1,7 @@
 Airport Challenge
 =================
 
-Task
-----
-
-To create the feature tests, matching unit tests and application code to meet
-the brief.
-
-
-Brief
+User stories
 -----
 
 We have a request from a client to write the software to control the flow of
@@ -38,6 +31,12 @@ I want to be able to prevent airplanes landing when the weather is stormy
 How to run
 ----------
 
+Clone this repo and run bundle:
+```
+$ git clone https://github.com/Mattia46/airport_challenge
+$ gem install bundle
+$ bundle
+```
 Type `rake` in the application's root folder.
 
 Application Code:
@@ -45,57 +44,3 @@ Application Code:
 
 - `./lib/airport`
 - `./lib/plane`
-
-Tests
------
-
-Feature Tests:
-`./spec/feature/grand_finale_spec`
-- 6 planes can be created
-- Airport knows planes are in the air
-- 6 planes can land at specified airport
-- Airport knows planes are in the airport
-- Plane is denied landing permission when airport is at maximum capacity
-- 6 landed planes have status 'landed'
-- After all 6 planes takeoff there are no more landed planes
-- After all 6 planes takeoff their status is 'flying'
-
-Unit Tests (Airport):
-  `./spec/airport_spec`
-     - Knows when a plane is in the air
-     - Knows when a plane is in the airport
-     - Can order a plane to takeoff
-     - Can respond to a plane wanting to land
-     - A plane cannot land if the airport is full
-     - Can be both sunny and stormy
-     - A plane cannot land when it is stormy
-     - A plane cannot takeoff when it is stormy
-
-     Unit Tests (Plane):
-       `./spec/plane_spec`
-          - Has a flying status when created
-          - Is located in the air when created
-          - Can request to land at specified airport
-          - Responds to land
-          - Has a status of landed after landing
-          - Does not respond to land after landing
-          - Responds to takeoff
-          - Can request to takeoff
-          - Changes its status to flying after takeoff
-          - Does not respond to takeoff after takeoff
-
-          ToDo:
-          ----
-
-          - Apply Object-Oriented principles
-          - Setup a running simulation
-          - Restart from new and do it again!  And again!  And again!
-          - ~~Airport knows planes' location~~
-          - ~~Test that weather conditions are random~~
-          - ~~Enable random weather conditions~~
-          - ~~Ensure plane does not land without permission~~
-          - ~~Ensure plane does not takeoff without permission~~
-          - ~~Unit tests for airport traffic control using doubles~~
-          - ~~Ensure a plane cannot land if airport is full, using double in unit test~~
-          - ~~Ensure planes cannot land when landed~~
-          - ~~Ensure planes cannot takeoff after takeoff~~
