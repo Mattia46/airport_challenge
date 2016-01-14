@@ -9,21 +9,6 @@ class Airport
     @capacity = capacity
   end
 
-  # Ogni Classe deve essere responsabile di una SOLA cosa. In qst caso lascio il weather
-  # ad una classe a se che richiamo ogni volta nell'Airport tramite il def initialize
-  # class Weather
-  #   def stormy?
-  #   end
-  # end
-  #
-  # class Airport
-  #   def initialize(weather: Weather.new)
-  #   end
-
-  #   private
-  #   attr_reader :weather
-  #  end
-
   def land (plane)
     fail_landing(plane)
     planes << plane
@@ -34,10 +19,6 @@ class Airport
     fail_take_off(plane)
     planes.delete(plane)
   end
-
-  # def stormy?
-  #   @stormy = true
-  # end
 
   private
   def fail_landing(plane)
